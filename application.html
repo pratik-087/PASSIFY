@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="application.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="logo"> PASSIFY </div>
+            <ul>
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <button>Login</button>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="form_container">
+        <h2>Fill Application</h2>
+        <form action="#">
+
+            <div class="form_group">
+                <i class='bx bxs-user-circle' ></i>
+                <input type="text" placeholder="Enter Name" required>
+            </div>
+
+            <div class="form_group">
+                <i class='bx bxs-phone' ></i>
+                <input type="number" placeholder="Enter Phone Number" required>
+            </div>
+
+            <div class="form_group">
+                <i class='bx bxs-envelope' ></i>
+                <input type="mail" placeholder="Enter Email" pattern=".*@$" required>
+            </div>
+
+            <div class="form_group">
+                <i class='bx bxs-message-rounded-minus' ></i>
+                <input type="number" placeholder="Enter Age" required>
+            </div>
+
+            <div class="form_group">
+                <i class='bx bx-map-pin' ></i>
+                <input type="text" placeholder="Enter Source Address" required>
+            </div>
+
+            <div class="form_group">
+                <i class='bx bxs-map-pin' ></i>
+                <input type="text" placeholder="Enter Destination Address" required>
+            </div>
+            
+            <span>Pass required for:</span>
+            <div class="radiogroup">
+                <label for=""><input type="radio" name="choose" required> Daily</label>
+                <label for=""><input type="radio" name="choose" required> Weekly</label>
+                <label for=""><input type="radio" name="choose" required> Monthly</label>
+            </div>
+
+            <div class="form_button">
+                <button>Submit</button>
+                <button>Reset</button>
+            </div>
+           
+        </form>
+    </div>
+</body>
+</html>
