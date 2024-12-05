@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+
+
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(232, 232, 232, 0.95);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    transition: background-color 0.15s ease;
+    border: 2px solid #856cae;
+    border-radius: 25px;
+    background-color: #e5d5ff;
+}
+
+.logo {
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 23px;
+    cursor: pointer;
+    padding: 7px;
+    background-color: #bba9d8;
+    border-radius: 7px;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav li a {
+    padding: 7px;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+nav button {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgba(232, 232, 232, 0.525);
+
+}
+
+.hero_container {
+    display: flex;
+    align-items: center;
+}
+
+.hero_text {
+    padding: 60px;
+    flex: 2;
+}
+
+.hero_text a {
+    border: 1.4px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    background-color: #bba6de;
+    padding: 13px;
+    text-decoration: none;
+    color: #2b2a2a;
+}
+
+.hero_text a:hover {
+    background-color: #dedcd7;
+    transition: background-color 0.2s ease-in;
+
+    transform: scale(1.02);
+}
+
+.hero_image {
+    flex: 1;
+}
+
+.hero_img1 {
+    margin-top: 90px;
+    margin-bottom: 20px;
+    width: 600px;
+    height: auto;
+}
+
+.img2 {
+    width: 200px;
+    height: auto;
+}
+
+hr {
+    height: 2px;
+    width: 80%;
+    color: rgba(0, 0, 0, 0.806);
+    background-color: rgba(0, 0, 0, 0.614);
+    margin: 50px auto;
+    border: none;
+}
+
+#services {
+    scroll-margin-top: 80px;
+}
+
+.scroll_down a {
+    margin-left: 50px;
+    font-size: 40px;
+    color: black;
+}
+
+.servicesh2 {
+    text-align: center;
+}
+
+.services_container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.services_container a {
+    background-color: #b294e1;
+    border-radius: 20px;
+    padding: 20px 55px;
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+}
+
+.services_container a:hover {
+    border: 1.5px solid rgb(107, 106, 106);
+    background-color: #dedcd7;
+    transform: scale(1.04);
+    transition: transform 0.3s ease;
+}
+
+.services_container img {
+    width: 70px;
+    height: auto;
+    margin: auto;
+    display: block;
+    margin-bottom: 13px;
+}
+
+.container_steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.steps {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+    padding: 6px;
+    background-color: #b294e1;
+    border-radius: 20px;
+}
+
+.steps:hover {
+    border: 1px solid grey;
+    border-radius: 20px;
+    transform: scale(1.02);
+    background-color: #dedcd7;
+    transition: transform 0.1s ease-in;
+    cursor: pointer;
+}
+
+.steps span {
+    width: 220px;
+    text-align: left;
+}
+
+.steps img {
+    width: 60px;
+    height: auto;
+    margin-right: 40px;
+}
+
+
+.priceh2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.stepsh2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.price {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #b294e1;
+    border-radius: 20px;
+}
+
+.price:hover {
+    border: 1px solid grey;
+    border-radius: 20px;
+    transform: scale(1.02);
+    background-color: #dedcd7;
+    transition: transform 0.1s ease-in;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.6);
+}
+
+.price img {
+    width: 60px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.price span {
+    width: 180px;
+    text-align: left;
+}
