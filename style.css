@@ -13,7 +13,6 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     font-size: 18px;
-    background-color: #ffffff;
 }
 
 
@@ -84,7 +83,7 @@ nav button {
 
 .hero_text {
     padding: 60px;
-    flex: 2;
+    flex: 1;
 }
 
 .hero_text a {
@@ -102,17 +101,17 @@ nav button {
 
     transform: scale(1.02);
 }
-
-.hero_image {
-    flex: 1;
-}
+    
+    .hero_image {
+        flex: 1;
+    }
 
 .hero_img1 {
-    margin-top: 90px;
-    margin-bottom: 20px;
-    width: 600px;
-    height: auto;
-}
+        margin-top: 90px;
+        margin-bottom: 20px;
+        width: 600px;
+        height: auto;
+    } 
 
 .img2 {
     width: 200px;
@@ -124,7 +123,7 @@ hr {
     width: 80%;
     color: rgba(0, 0, 0, 0.806);
     background-color: rgba(0, 0, 0, 0.614);
-    margin: 50px auto;
+    margin: 80px auto;
     border: none;
 }
 
@@ -175,17 +174,18 @@ hr {
 
 .container_steps {
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .steps {
     display: flex;
+    flex-direction: column;
     margin-bottom: 25px;
     align-items: center;
-    padding: 6px;
-    background-color: #b294e1;
+    justify-content: center;
+    padding: 76px 6px;
+    background-color: #e0cdff;
     border-radius: 20px;
 }
 
@@ -200,13 +200,13 @@ hr {
 
 .steps span {
     width: 220px;
-    text-align: left;
+    text-align: center;
 }
 
 .steps img {
     width: 60px;
     height: auto;
-    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 
@@ -227,7 +227,7 @@ hr {
 }
 
 .price {
-    padding: 10px;
+    padding: 45px;
     display: flex;
     align-items: center;
     margin-bottom: 25px;
@@ -254,4 +254,36 @@ hr {
 .price span {
     width: 180px;
     text-align: left;
+}
+
+footer{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    border: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/* Add to your CSS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fadeIn 1.5s ease-in-out;
 }

@@ -25,51 +25,58 @@
 
     <div class="form_container">
         <h2>Fill Application</h2>
-        <form action="#">
+        <form action="application.php" method="post">
 
             <div class="form_group">
                 <i class='bx bxs-user-circle' ></i>
-                <input type="text" placeholder="Enter Name" required>
+                <input type="text" name="name" placeholder="Enter Name" required>
             </div>
 
             <div class="form_group">
                 <i class='bx bxs-phone' ></i>
-                <input type="number" placeholder="Enter Phone Number" required>
+                <input type="tel" name="phone" placeholder="Enter Phone Number" required>
             </div>
 
             <div class="form_group">
                 <i class='bx bxs-envelope' ></i>
-                <input type="mail" placeholder="Enter Email" pattern=".*@$" required>
+                <input type="email" name="email" placeholder="Enter Email"  required>
             </div>
 
             <div class="form_group">
                 <i class='bx bxs-message-rounded-minus' ></i>
-                <input type="number" placeholder="Enter Age" required>
+                <input type="number" name="age" placeholder="Enter Age" required>
+            </div>
+
+            <div class="form_group">
+                <i class='bx bxs-user-detail'></i>
+                <input type="text" name="gender" placeholder="Enter Gender" required>
             </div>
 
             <div class="form_group">
                 <i class='bx bx-map-pin' ></i>
-                <input type="text" placeholder="Enter Source Address" required>
+                <input type="text" name="source_add" placeholder="Enter Source Address" required>
             </div>
 
             <div class="form_group">
                 <i class='bx bxs-map-pin' ></i>
-                <input type="text" placeholder="Enter Destination Address" required>
+                <input type="text" name="destination_add" placeholder="Enter Destination Address" required>
             </div>
             
             <span>Pass required for:</span>
             <div class="radiogroup">
-                <label for=""><input type="radio" name="choose" required> Daily</label>
-                <label for=""><input type="radio" name="choose" required> Weekly</label>
-                <label for=""><input type="radio" name="choose" required> Monthly</label>
+                <label for="daily"><input type="radio" name="pass_type" id="daily" required> Daily</label>
+                <label for="weekly"><input type="radio" name="pass_type" id="weekly" required> Weekly</label>
+                <label for="monthly"><input type="radio" name="pass_type" id="monthly" required> Monthly</label>
             </div>
 
             <div class="form_button">
-                <button>Submit</button>
-                <button>Reset</button>
+                <input type="submit" value="Submit" >
+                <input type="reset" value="Reset">
             </div>
            
         </form>
     </div>
 </body>
 </html>
+
+    
